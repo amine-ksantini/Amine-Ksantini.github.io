@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amine Ksantini - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #f5f5f7;
+            background-image: radial-gradient(circle at 50% 0%, #1a1a24 0%, #000000 70%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        /* Animation de transition entre les pages */
+        .fade-in { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <nav id="navbar" class="max-w-6xl mx-auto hidden mb-8">
+        <button onclick="Controleur.naviguer('accueil')" class="text-gray-400 hover:text-white flex items-center gap-2 transition">
+            ← Retour à l'accueil
+        </button>
+    </nav>
+
+    <div id="app" class="max-w-6xl mx-auto fade-in"></div>
+
+    <script src="js/modele.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/controleur.js"></script>
+</body>
+</html>
