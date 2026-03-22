@@ -3,7 +3,7 @@
 Bienvenue sur le code source de mon portfolio interactif ! 
 Je suis étudiant en 2e année de BUT Informatique (parcours Déploiement d'applications communicantes et sécurisées) à l'Université Paris-Saclay, à la recherche d'un stage en cybersécurité et administration réseau.
 
- **[Voir mon portfolio en ligne](amine-ksantini.github.io/mon-portfolio/index.html)** 
+ **[Voir mon portfolio en ligne](https://amine-ksantini.github.io/mon-portfolio/index.html)** 
 
 ##  Fonctionnalités et Design
 Ce portfolio a été conçu pour être ultra-rapide, fluide et esthétique, en s'inspirant des codes du design "Apple" (Bento Grid, Glassmorphism, Mode sombre natif).
