@@ -91,6 +91,99 @@ const Modele = {
     ],
 
     projetsParSemestre: {
+        "Semestre 4 (S4)" : [
+            {
+                id: "emoji_slither",
+                titre: "Emoji Slither - Battle Royale",
+                image: "images/emoji_slither.png", //
+                resume: "Jeu multijoueur en temps réel de type Battle Royale, développé avec Node.js, Socket.IO et HTML5 Canvas.", //
+                
+                descriptionDetailed: {
+                    contexte: "Projet SAE du Semestre 4 (2026) réalisé en équipe selon les méthodes agiles. L'objectif était de concevoir un jeu multijoueur compétitif capable de supporter plus de 30 joueurs simultanément dans une même arène.", //
+                    objectifs: "Créer un jeu de survie compétitif où la zone de jeu se rétrécit. Le projet impliquait la programmation temps réel, la gestion de la concurrence réseau et l'équilibrage du gameplay (Top 5 en temps réel, apparition de coffres et de bonus).", //
+                    fonctionnalites: "Architecture client-serveur authoritative pour garantir l'équité, détection de collisions 2D performante, et interfaces utilisateur adaptées pour les joueurs sur ordinateur (écran) et sur mobile.", //
+                    implementation: "Développement du backend en Node.js avec Socket.IO pour la communication réseau. Mon rôle au sein de l'équipe s'est spécifiquement concentré sur le Frontend et le rendu graphique via HTML5 Canvas, garantissant la fluidité visuelle de l'action et des animations.", //
+                    technos: [
+                        "Node.js", 
+                        "Socket.IO", 
+                        "HTML5 Canvas", 
+                        "WebSockets (Temps réel)", 
+                        "Architecture Client-Serveur",
+                        "Méthode Agile"
+                    ] //
+                }
+            }
+        ],
+
+        "Semestre 3 (S3)" : [
+            {
+                id: "sae301",
+                titre: "Système Centralisé de Répartition (SAE 301)",
+                image: "images/sae301.png", // Ajoutez une image (ex: diagramme de déploiement, maquette web ou logo de l'app)
+                resume: "Architecture Full-Stack (Web, API PHP, Client Java, MySQL) automatisant la répartition d'étudiants sous contraintes complexes.", //
+                
+                descriptionDetailed: {
+                    contexte: "Projet majeur et transversal du Semestre 3 mobilisant l'ensemble des pôles de l'informatique : recueil des besoins, modélisation de bases de données, développement web, algorithmique avancée et conception orientée objet.", //
+                    objectifs: "Concevoir une plateforme complète d'assistance à la création de groupes académiques (TD/TP). L'algorithme devait satisfaire de nombreuses contraintes strictes : homogénéisation des niveaux, équilibrage par genre, types de baccalauréats, et gestion logistique du covoiturage.", //
+                    fonctionnalites: "Le système est divisé en plusieurs couches : Une interface Web ergonomique (UI/UX) avec gestion des rôles (RBAC : Étudiants, Professeurs). Une API REST développée en PHP pour faire la passerelle avec la base de données. Enfin, un client lourd développé en Java (connecté via requêtes HTTP à l'API) pour l'exécution des algorithmes de répartition par l'administration.", //
+                    implementation: "Modélisation UML exhaustive (cas d'utilisation, classes, déploiement). Serveur sous Apache hébergeant une base MySQL 8.0 et du PHP 8.5. Côté client web, application rigoureuse d'une charte graphique sur-mesure (palette Jade/Turquoise) avec intégration de principes UX modernes.", //
+                    technos: [
+                        "Java (Client Lourd)", 
+                        "PHP (API REST)", 
+                        "MySQL 8.0", 
+                        "HTML/CSS/JS (UI/UX)", 
+                        "Architecture MVC", 
+                        "Modélisation UML"
+                    ]
+                }
+            }
+        ],
+
+        "Semestre 2 (S2)" : [
+            {
+                id: "microprocesseur",
+                titre: "Architecture d'un Microprocesseur",
+                resume: "Conception du circuit logique d'un microprocesseur 16 bits et développement d'algorithmes en Assembleur personnalisé.", //
+                
+                descriptionDetailed: {
+                    contexte: "Ce projet a été réalisé dans le cadre du module R204 (Communication et fonctionnement bas niveau) lors du Semestre 2 de BUT.", //
+                    objectifs: "Comprendre et modéliser le fonctionnement interne d'un ordinateur en concevant un processeur 16 bits doté de son propre jeu d'instructions (ALU, multiplexeurs, registres).", //
+                    fonctionnalites: "Création d'un jeu d'instructions sur mesure (LOADA, JMP conditionnels, etc.) et développement de programmes bas niveau testés sur l'architecture, tels que la détection de palindromes et la conversion de texte en majuscules.", //
+                    implementation: "Modélisation complète du circuit numérique avec le logiciel Logisim. Écriture, assemblage et exécution du code Assembleur au sein d'un environnement émulé sous DOSBox.", //
+                    technos: ["Assembleur", "Logisim", "Architecture Matérielle", "Logique Numérique", "Bas niveau"]
+                }
+            }, 
+
+            {
+                id: "bdd_jo",
+                titre: "Architecture & Exploitation de Base de Données",
+                resume: "Conception et exploitation avancée d'une base de données relationnelle pour la gestion des athlètes et résultats des Jeux Olympiques.", //
+                
+                descriptionDetailed: {
+                    contexte: "Ce projet a été réalisé dans le cadre du module S204 (Exploitation de bases de données) au cours du Semestre 2.", //
+                    objectifs: "Modéliser, créer et administrer une base de données complexe regroupant les informations des délégations (NOC), des athlètes, des disciplines et des médailles olympiques.", //
+                    fonctionnalites: "Développement de vues SQL analytiques (ex: MEDAILLES_ATHLETES), implémentation d'une dizaine de déclencheurs (triggers) pour garantir l'intégrité des données, et création de fonctions/procédures stockées (génération de biographies, ajout dynamique de résultats).", //
+                    implementation: "Écriture complète des scripts de création (DDL) et d'insertion (DML). Programmation avancée en PL/SQL sous Oracle Database pour automatiser le traitement des participations individuelles et en équipe, incluant la génération de formats JSON.", //
+                    technos: ["SQL", "PL/SQL", "Oracle Database", "Procédures Stockées", "Triggers"]
+                }
+            },
+
+          {
+                id: "jo_companion",
+                titre: "JO Companion - Application Java",
+                image: "images/jo_companion.png", // Pensez à ajouter une capture de l'interface de votre application
+                resume: "Application de bureau en Java dotée d'une interface graphique pour la gestion globale des Jeux Olympiques (Athlètes, Épreuves, Médailles).", //
+                
+                descriptionDetailed: {
+                    contexte: "Projet transversal de fin d'année (SAE S2) mêlant Programmation Orientée Objet, création d'IHM (Interfaces Homme-Machine) et analyse de qualité logicielle.", //
+                    objectifs: "Concevoir une application logicielle robuste permettant à un utilisateur de gérer les entités complexes des Jeux Olympiques via une interface graphique intuitive.", //
+                    fonctionnalites: "Gestion complète (Création, Lecture, Suppression) des athlètes, équipes, épreuves et sessions. Navigation via des menus interactifs. Sauvegarde et restauration persistante des données grâce à la sérialisation.", //
+                    implementation: "Développement en Java natif avec une séparation stricte du code selon l'architecture logicielle MVC (Modèles pour les données, Vues pour l'interface graphique, Contrôleurs pour les Listeners/Événements).", //
+                    technos: ["Java", "Architecture MVC", "IHM (Interface Graphique)", "Programmation Orientée Objet", "Sérialisation"]
+                }
+            }
+        ],
+
         "Semestre 1 (S1)" : [
             {
                 id: "artefacts",
@@ -134,101 +227,7 @@ const Modele = {
                     technos: ["C++", "Bibliothèque SDL2", "Programmation Orientée Objet", "Game Loop", "Tilemapping 2D"]
                 }
             }
-        ],
-
-        "Semestre 2 (S2)" : [
-            {
-                id: "microprocesseur",
-                titre: "Architecture d'un Microprocesseur",
-                resume: "Conception du circuit logique d'un microprocesseur 16 bits et développement d'algorithmes en Assembleur personnalisé.", //
-                
-                descriptionDetailed: {
-                    contexte: "Ce projet a été réalisé dans le cadre du module R204 (Communication et fonctionnement bas niveau) lors du Semestre 2 de BUT.", //
-                    objectifs: "Comprendre et modéliser le fonctionnement interne d'un ordinateur en concevant un processeur 16 bits doté de son propre jeu d'instructions (ALU, multiplexeurs, registres).", //
-                    fonctionnalites: "Création d'un jeu d'instructions sur mesure (LOADA, JMP conditionnels, etc.) et développement de programmes bas niveau testés sur l'architecture, tels que la détection de palindromes et la conversion de texte en majuscules.", //
-                    implementation: "Modélisation complète du circuit numérique avec le logiciel Logisim. Écriture, assemblage et exécution du code Assembleur au sein d'un environnement émulé sous DOSBox.", //
-                    technos: ["Assembleur", "Logisim", "Architecture Matérielle", "Logique Numérique", "Bas niveau"]
-                }
-            }, 
-
-            {
-                id: "bdd_jo",
-                titre: "Architecture & Exploitation de Base de Données",
-                resume: "Conception et exploitation avancée d'une base de données relationnelle pour la gestion des athlètes et résultats des Jeux Olympiques.", // [cite: 1]
-                
-                descriptionDetailed: {
-                    contexte: "Ce projet a été réalisé dans le cadre du module S204 (Exploitation de bases de données) au cours du Semestre 2.", // [cite: 1]
-                    objectifs: "Modéliser, créer et administrer une base de données complexe regroupant les informations des délégations (NOC), des athlètes, des disciplines et des médailles olympiques.", // [cite: 1]
-                    fonctionnalites: "Développement de vues SQL analytiques (ex: MEDAILLES_ATHLETES), implémentation d'une dizaine de déclencheurs (triggers) pour garantir l'intégrité des données, et création de fonctions/procédures stockées (génération de biographies, ajout dynamique de résultats).", // [cite: 1]
-                    implementation: "Écriture complète des scripts de création (DDL) et d'insertion (DML). Programmation avancée en PL/SQL sous Oracle Database pour automatiser le traitement des participations individuelles et en équipe, incluant la génération de formats JSON.", // [cite: 1]
-                    technos: ["SQL", "PL/SQL", "Oracle Database", "Procédures Stockées", "Triggers"]
-                }
-            },
-
-          {
-                id: "jo_companion",
-                titre: "JO Companion - Application Java",
-                image: "images/jo_companion.png", // Pensez à ajouter une capture de l'interface de votre application
-                resume: "Application de bureau en Java dotée d'une interface graphique pour la gestion globale des Jeux Olympiques (Athlètes, Épreuves, Médailles).", //
-                
-                descriptionDetailed: {
-                    contexte: "Projet transversal de fin d'année (SAE S2) mêlant Programmation Orientée Objet, création d'IHM (Interfaces Homme-Machine) et analyse de qualité logicielle.", //
-                    objectifs: "Concevoir une application logicielle robuste permettant à un utilisateur de gérer les entités complexes des Jeux Olympiques via une interface graphique intuitive.", //
-                    fonctionnalites: "Gestion complète (Création, Lecture, Suppression) des athlètes, équipes, épreuves et sessions. Navigation via des menus interactifs. Sauvegarde et restauration persistante des données grâce à la sérialisation.", //
-                    implementation: "Développement en Java natif avec une séparation stricte du code selon l'architecture logicielle MVC (Modèles pour les données, Vues pour l'interface graphique, Contrôleurs pour les Listeners/Événements).", //
-                    technos: ["Java", "Architecture MVC", "IHM (Interface Graphique)", "Programmation Orientée Objet", "Sérialisation"]
-                }
-            }
-        ],
-
-        "Semestre 3 (S3)" : [
-            {
-                id: "sae301",
-                titre: "Système Centralisé de Répartition (SAE 301)",
-                image: "images/sae301.png", // Ajoutez une image (ex: diagramme de déploiement, maquette web ou logo de l'app)
-                resume: "Architecture Full-Stack (Web, API PHP, Client Java, MySQL) automatisant la répartition d'étudiants sous contraintes complexes.", //
-                
-                descriptionDetailed: {
-                    contexte: "Projet majeur et transversal du Semestre 3 mobilisant l'ensemble des pôles de l'informatique : recueil des besoins, modélisation de bases de données, développement web, algorithmique avancée et conception orientée objet.", //
-                    objectifs: "Concevoir une plateforme complète d'assistance à la création de groupes académiques (TD/TP). L'algorithme devait satisfaire de nombreuses contraintes strictes : homogénéisation des niveaux, équilibrage par genre, types de baccalauréats, et gestion logistique du covoiturage.", //
-                    fonctionnalites: "Le système est divisé en plusieurs couches : Une interface Web ergonomique (UI/UX) avec gestion des rôles (RBAC : Étudiants, Professeurs). Une API REST développée en PHP pour faire la passerelle avec la base de données. Enfin, un client lourd développé en Java (connecté via requêtes HTTP à l'API) pour l'exécution des algorithmes de répartition par l'administration.", //
-                    implementation: "Modélisation UML exhaustive (cas d'utilisation, classes, déploiement). Serveur sous Apache hébergeant une base MySQL 8.0 et du PHP 8.5. Côté client web, application rigoureuse d'une charte graphique sur-mesure (palette Jade/Turquoise) avec intégration de principes UX modernes.", //
-                    technos: [
-                        "Java (Client Lourd)", 
-                        "PHP (API REST)", 
-                        "MySQL 8.0", 
-                        "HTML/CSS/JS (UI/UX)", 
-                        "Architecture MVC", 
-                        "Modélisation UML"
-                    ]
-                }
-            }
-        ],
-
-        "Semestre 4 (S4)" : [
-            {
-                id: "emoji_slither",
-                titre: "Emoji Slither - Battle Royale",
-                image: "images/emoji_slither.png", //
-                resume: "Jeu multijoueur en temps réel de type Battle Royale, développé avec Node.js, Socket.IO et HTML5 Canvas.", //
-                
-                descriptionDetailed: {
-                    contexte: "Projet SAE du Semestre 4 (2026) réalisé en équipe selon les méthodes agiles. L'objectif était de concevoir un jeu multijoueur compétitif capable de supporter plus de 30 joueurs simultanément dans une même arène.", //
-                    objectifs: "Créer un jeu de survie compétitif où la zone de jeu se rétrécit. Le projet impliquait la programmation temps réel, la gestion de la concurrence réseau et l'équilibrage du gameplay (Top 5 en temps réel, apparition de coffres et de bonus).", //
-                    fonctionnalites: "Architecture client-serveur authoritative pour garantir l'équité, détection de collisions 2D performante, et interfaces utilisateur adaptées pour les joueurs sur ordinateur (écran) et sur mobile.", //
-                    implementation: "Développement du backend en Node.js avec Socket.IO pour la communication réseau. Mon rôle au sein de l'équipe s'est spécifiquement concentré sur le Frontend et le rendu graphique via HTML5 Canvas, garantissant la fluidité visuelle de l'action et des animations.", //
-                    technos: [
-                        "Node.js", 
-                        "Socket.IO", 
-                        "HTML5 Canvas", 
-                        "WebSockets (Temps réel)", 
-                        "Architecture Client-Serveur",
-                        "Méthode Agile"
-                    ] //
-                }
-            }
-        ],
-
+        ]
     },
     
     formations: [
