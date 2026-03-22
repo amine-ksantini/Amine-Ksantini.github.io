@@ -3,7 +3,7 @@
 Bienvenue sur le code source de mon portfolio interactif ! 
 Je suis étudiant en 2e année de BUT Informatique (parcours Déploiement d'applications communicantes et sécurisées) à l'Université Paris-Saclay, à la recherche d'un stage en cybersécurité et administration réseau.
 
- **[Voir mon portfolio en ligne](https://votre-pseudo.github.io)** *(N'oubliez pas de mettre votre vrai lien ici)*
+ **[Voir mon portfolio en ligne](https://amine-ksantini.github.io)** 
 
 ##  Fonctionnalités et Design
 Ce portfolio a été conçu pour être ultra-rapide, fluide et esthétique, en s'inspirant des codes du design "Apple" (Bento Grid, Glassmorphism, Mode sombre natif).
@@ -32,7 +32,7 @@ mon-portfolio/
 
 ## 🚀 Lancer le projet en local
 Puisqu'il s'agit d'un projet "Vanilla", aucune installation complexe n'est requise :
-1. Clonez ce dépôt : `git clone https://github.com/votre-pseudo/votre-pseudo.github.io.git`
+1. Clonez ce dépôt : `git clone https://github.com/amine-ksantini/amine-ksantini.github.io.git`
 2. Ouvrez simplement le fichier `index.html` dans votre navigateur web préféré.
 
 ## 📫 Me contacter
